@@ -142,7 +142,7 @@
           cell.classList.add("taken");
 
           if (checkWin(currentSymbol)) {
-            message.innerText = `${currentPlayer}, congratulations you won!`;
+            message.innerText = `${currentPlayer} congratulations you won!`;
             gameActive = false;
             return;
           }
@@ -150,10 +150,10 @@
           // Switch turns
           if (currentPlayer === player1) {
             currentPlayer = player2;
-            currentSymbol = "O";
+            currentSymbol = "o";
           } else {
             currentPlayer = player1;
-            currentSymbol = "X";
+            currentSymbol = "x";
           }
 
           message.innerText = `${currentPlayer}, you're up`;
