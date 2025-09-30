@@ -69,15 +69,19 @@
 <body>
   <div class="container">
     <!-- Player input form -->
+	  <h1>TIC TAC TOE</h1>
     <div id="playerForm">
-      <input type="text" id="player-1" placeholder="Enter Player 1 Name" required>
-      <input type="text" id="player-2" placeholder="Enter Player 2 Name" required>
-      <button id="submit">Submit</button>
+		
+		<label>Player 1</label>
+      <input type="text" id="player1" placeholder="enter name" required><br>
+		<label>Player 2</label>
+      <input type="text" id="player2" placeholder="enter name" required><br>
+      <button id="submit" type="button">Start Game</button>
     </div>
 
     <!-- Board Section -->
     <div id="board">
-      <h1>Tic Tac Toe</h1>
+      <!-- <h1>Tic Tac Toe</h1> -->
       <div class="message"></div>
       <div class="grid">
         <div class="cell" id="1"></div>
@@ -118,8 +122,8 @@
     ];
 
     submitBtn.addEventListener("click", () => {
-      player1 = document.getElementById("player-1").value.trim();
-      player2 = document.getElementById("player-2").value.trim();
+      player1 = document.getElementById("player1").value.trim();
+      player2 = document.getElementById("player2").value.trim();
 
       if (!player1 || !player2) {
         alert("Please enter both player names!");
